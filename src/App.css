@@ -36,3 +36,35 @@
     transform: rotate(360deg);
   }
 }
+*{
+  margin: 0;
+  padding: 0;
+}
+nav{
+  background-color: lightgreen;
+  display:flex;
+  list-style: none;
+}
+li{
+  padding: 9px;
+  padding-left: 100px;
+}
+a{
+  color: black;
+  text-decoration: none;
+}
+a:hover{
+  color: blue;
+}
+.intro{
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+.btn{
+  padding:7px;
+  margin: 4px;
+}
+#text{
+  border: solid grey 1px;
+}
