@@ -3,19 +3,27 @@
   padding: 0;
 }
 .navbar{
-  background-color: lightgreen;
+  width: 100%;
+  background-color: #009B4D;
   display: flex;
   list-style: none;
+  color: white;
 }
 .navbar-brand{
+  color: white;
   margin-left: 50px;
+}
+.nav-link{
+  color: white;
 }
 li{
   padding: 9px;
   padding-left: 1rem;
 }
-.nav-link:hover{
-  color: blue;
+.nav-link:hover, 
+.navbar-brand:hover,
+.switch:hover{
+  color: #FFCC00;
   cursor: pointer;
 }
 .intro{
@@ -29,7 +37,15 @@ li{
 }
 #text,.form-control{
   border: solid grey 1px;
+  background-color: #E5EDF1;
 }
-.buttons{
+.buttons, .collapse{
   display: flex;
+}
+.form-check{
+  position: relative;
+  left: 50%;
+}
+.switch{
+  cursor: pointer;
 }

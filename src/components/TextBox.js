@@ -56,7 +56,7 @@ export default function TextBox(props){
             <form>
                 <div className="container mb-3">
                     <label htmlFor="exampleFormControlTextarea1" className="form-label">{props.title}</label>
-                    <textarea id='text' className="form-control" value={text} placeholder="text..." onChange={handleOnChange} rows="8"></textarea>
+                    <textarea id='text' className="form-control" style={{backgroundColor: props.bgcolor, color: props.color}} value={text} placeholder="text..." onChange={handleOnChange} rows="8"></textarea>
                 </div>
             </form>
             <div className='container buttons'>
@@ -68,10 +68,10 @@ export default function TextBox(props){
                 <button type="button" class="btn btn-info" onClick={copy}>Copy</button>
                 <form className="input-group control">
                     <div className="col-xs-3 m-2">
-                        <input type="text" className="form-control" id="text" placeholder="Enter color for Text" required/>
+                        <input type="text" className="form-control" style={{backgroundColor: props.bgcolor, color: props.color}} id="text" placeholder="Enter color for Text" required/>
                     </div>
                     <div className="col-xs-3 m-2">
-                        <input type="text" className="form-control" id='bgcolor' placeholder="Enter color for BG" required/>
+                        <input type="text" className="form-control" style={{backgroundColor: props.bgcolor, color: props.color}} id='text' placeholder="Enter color for BG" required/>
                     </div>
                 <button type="button" className="btn btn-danger control">Submit</button>
                 </form>
@@ -82,7 +82,7 @@ export default function TextBox(props){
             <form>
                 <div className="container mb-3">
                     <label htmlFor="exampleFormControlTextarea1" className="form-label"><h2>Preview:</h2></label>
-                    <textarea id='text' className="form-control preview" value={text2} placeholder="text..." rows="8"></textarea>
+                    <textarea id='text' className="form-control preview" style={{backgroundColor: props.bgcolor, color: props.color}} value={text2} placeholder="text..." rows="8"></textarea>
                 </div>
             </form>
         </>
