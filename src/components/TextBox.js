@@ -65,16 +65,16 @@ export default function TextBox(props){
                 <button type="button" className="btn btn-success" onClick={firstChar}>Fchar</button>
                 <button type="button" className="btn btn-danger" onClick={invert}>Invert</button>
                 <button type="button" className="btn btn-outline-warning" onClick={clear}>Clear</button>
-                <button type="button" class="btn btn-info" onClick={copy}>Copy</button>
-                <form className="input-group control">
-                    <div className="col-xs-3 m-2">
+                <button type="button" className="btn btn-info" onClick={copy}>Copy</button>
+                {/* <form className="input-group">
+                    <div className="col-xs-4 m-2">
                         <input type="text" className="form-control" style={{backgroundColor: props.bgcolor, color: props.color}} id="text" placeholder="Enter color for Text" required/>
                     </div>
-                    <div className="col-xs-3 m-2">
-                        <input type="text" className="form-control" style={{backgroundColor: props.bgcolor, color: props.color}} id='text' placeholder="Enter color for BG" required/>
+                    <div className="col-xs-4 m-2">
+                        <input type="text" className="form-control" style={{backgroundColor: props.bgcolor, color: props.color,}} id='text' placeholder="Enter color for BG" required/>
                     </div>
-                <button type="button" className="btn btn-danger control">Submit</button>
                 </form>
+                <button type="button" className="btn btn-danger">Submit</button> */}
             </div>
             <div className='container my-4'>
                 <h2>Your Text Summary:</h2>{text.split(' ').length} Words and {text.length} Characters.

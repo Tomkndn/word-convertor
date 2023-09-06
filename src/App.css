@@ -49,3 +49,6 @@ li{
 .switch{
   cursor: pointer;
 }
+.input-group{
+  width: auto;
+}
